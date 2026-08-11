@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>form</title>
+</head>
+<body>
+    <h1>Somebody's Profile</h1>
+    <form action="/submit" method="post">
+        <textarea name="name" >your namehere</textarea><br>
+        <select name="Branch">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="DSAI">DSAI</option>
+        </select><br>
+
+        <input type="email" name="email" required><br>
+<label for="reg no">Registration Number:</label><br>
+    <input 
+        type="text" 
+        id="reg no" 
+        name="reg no" 
+        required
+        pattern="[0-9]{2}[A-Z]{3}[0-9]{3}"
+        title="Format: 24BCS123"
+    >
+    <br>
+    <p>Select your skills:</p>
+
+<div>
+  <input type="checkbox" id="s1" name="skills" value="python">
+  <label for="s1">Python</label>
+</div>
+
+<div>
+  <input type="checkbox" id="s2" name="skills" value="webdevelopment">
+  <label for="s2">Web Development</label>
+</div>
+
+<div>
+  <input type="checkbox" id="s3" name="skills" value="ML">
+  <label for="s3">Machine Learning</label>
+</div>
+
+<textarea name="bio" rows="4">your bio here</textarea><br>
+
+<button type="submit">Submit</button>
+
